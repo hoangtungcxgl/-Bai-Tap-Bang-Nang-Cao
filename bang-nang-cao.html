@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Bài tập] Tạo bảng nâng cao</title>
+    <STYLE>
+        body {
+            background-color: rgb(50, 140, 243);
+            /* CSS Bàn Cờ Vua */
+        }
+        .container-1 {
+            margin: 20px;
+        }
+        .chess {
+            border-collapse: collapse;
+        }
+        /* td {
+            border: 1px solid ;
+        } */
+        .chess td {
+            box-sizing: border-box;
+            height: 80px;
+            width: 80px;
+            padding: 10px;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 700;
+            background-color: white;
+        }
+       
+        .chess tr:nth-child(2n) > td:nth-child(2n+1) {
+            background-color: black;
+        }
+        .chess tr:nth-child(2n) > td:nth-child(1) {
+            background-color: transparent;
+        }
+        
+        .chess tr:nth-child(2n+1) > td:nth-child(2n) {
+            background-color: rgb(0, 0, 0);
+        }
+        .chess tr:nth-child(1) > td:nth-child(2n) {
+            background-color: transparent;
+        }
+        .chess tr > td:first-child {
+            text-align: right;
+            border: none;
+            background-color: transparent;
+            
+        }
+        .chess tr:first-child > td {
+            vertical-align: bottom;
+            border: none;
+            color: rgb(0, 0, 0);
+            background-color: transparent;
+        }
+
+        /* CSS Lịch */
+        .container-2 {
+            margin: 50px;
+            width: 800px;
+        }
+        
+        /* .celender = <table> */
+            .celender {
+                border-collapse: collapse;
+                
+            }
+            .celender td {
+            box-sizing: border-box;
+            height: 40px;
+            width: 70px;
+            background-color: white;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 700;
+            border: 2px solid rgb(180, 180, 180);
+        }
+        .celender sub {
+            font-size:12px;
+            color: black;
+        }
+
+        .celender tr > td:first-child {
+            color: red;
+        }
+        .celender tr > td:last-child {
+            color: blue; 
+        }
+
+        .celender tr:first-child > td { 
+            color: #ffffff;
+            background-color: #ffb228 ;
+            font-size: 18px;
+            font-weight: 600;
+            /* border: solid transparent; */
+            padding: 2px;
+            margin: 10px;
+            
+            border-bottom: 1.5px solid transparent;
+            border-right: 1.5px solid white;
+            border-left: 1.5px solid transparent;
+            border-top: 1.5px solid transparent;
+
+        }
+
+        .celender tr:nth-child(2) > td  {
+            background-color: transparent;
+            border: solid transparent;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .celender tr:first-child > td:first-child {
+            background-color: #ff2a1a ;
+        }
+        .celender tr:first-child > td:last-child {
+            background-color: #103ffb ;
+            border-right: 1.5px solid transparent;
+        }
+
+        
+        
+    </STYLE>
+</head>
+<body>
+    <div class="container-1" title="Bàn cờ vua">
+        <h1>Bàn Cờ Vua</h1>
+        <table class="chess" >
+            <tr>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>  
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>  
+            <tr>
+                <td>C</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>  
+            <tr>
+                <td>D</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>  
+            <tr>
+                <td>E</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>  
+            <tr>
+                <td>F</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>  
+            <tr>
+                <td>G</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>  
+            <tr>
+                <td>H</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>   
+        </table>
+    </div> 
+    <br>
+    <div class="container-2">
+        <h1>Tháng 10 - Octorber</h1>
+        <table class="celender" >
+            <tr>
+                <td>C.Nhật</td>
+                <td>T.Hai</td>
+                <td>T.Ba</td>
+                <td>T.Tư</td>
+                <td>T.Năm</td>
+                <td>T.Sáu</td>
+                <td>T.Bảy</td>
+            </tr>
+            <tr>
+                <td>Sun</td>
+                <td>Mon</td>
+                <td>Tue</td>
+                <td>Wed</td>
+                <td>Thu</td>
+                <td>Fri</td>
+                <td>Sat</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1<sub>13</sub></td>
+                <td>2<sub>14</sub></td>
+                <td>3<sub>15</sub></td>
+            </tr>
+            <tr>
+                <td>4<sub>16</sub></td>
+                <td>5<sub>17</sub></td>
+                <td>6<sub>18</sub></td>
+                <td>7<sub>19</sub></td>
+                <td>8<sub>20</sub></td>
+                <td>9<sub>21</sub></td>
+                <td>10<sub>22</sub></td>
+            </tr>
+            <tr>
+                <td>11<sub>23</sub></td>
+                <td>12<sub>24</sub></td>
+                <td>13<sub>25</sub></td>
+                <td>14<sub>26</sub></td>
+                <td>15<sub>27</sub></td>
+                <td>16<sub>28</sub></td>
+                <td>17<sub>29</sub></td>
+            </tr>
+            <tr>
+                <td>18<sub>1.9</sub></td>
+                <td>19<sub>2</sub></td>
+                <td>20<sub>3</sub></td>
+                <td>21<sub>4</sub></td>
+                <td>22<sub>5</sub></td>
+                <td>23<sub>6</sub></td>
+                <td>24<sub>7</sub></td>
+            </tr>
+            <tr>
+                <td>25<sub>8</sub></td>
+                <td>26<sub>9</sub></td>
+                <td>27<sub>10</sub></td>
+                <td>28<sub>11</sub></td>
+                <td>29<sub>12</sub></td>
+                <td>30<sub>13</sub></td>
+                <td>31<sub>14</sub></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
